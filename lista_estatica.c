@@ -80,7 +80,8 @@ void ordena(Lista *p_l){
 
 int remove_inicio(Lista *p_l, elem_t *p_e){
     int i;
-    for(i=1; i<p_l->tam; i++){
+
+    for(i=1; i<=p_l->tam; i++){
         p_l->vet[i-1] = p_l->vet[i];
     }
 

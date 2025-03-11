@@ -74,7 +74,9 @@
        break;      
      case 9:
        break;            
-     case 10: exibe(&l); break;
+     case 10: 
+       exibe(&l); 
+       break;
      }
      
      exibe(&l);
