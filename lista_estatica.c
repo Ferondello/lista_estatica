@@ -40,6 +40,15 @@ void insere_fim(Lista *p_l, elem_t e){
 
 int insere_ordenado(Lista *p_l, elem_t e){
     int i, j;
+    if(!ordenada(p_l)){
+        ordena(p_l);
+    }
+    
+    if(e > p_l->vet[p_l->tam - 1]){
+        p_l ->vet[p_l->tam] = e;
+        p_l->tam ++;
+        return 1;
+    }
     for(i=0; i<p_l->tam; i++){
         if(p_l->vet[i] == e) return 0;
         if(e > p_l->vet[i] && e < p_l->vet[i+1]){
@@ -105,6 +114,7 @@ int remove_valor(Lista *p_l, elem_t e){
             p_l->tam --;
         }
     }
+    return 0;
 
 }
 

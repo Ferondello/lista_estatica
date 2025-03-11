@@ -62,26 +62,22 @@
        break;
      case 7:
        if (remove_fim(&l, &num))
-     printf("\nNumero removido: %d", num);
+        printf("\nNumero removido: %d", num);
        else
-     printf("\nLista vazia");
+         printf("\nLista vazia");
        break;
      case 8:
        printf("\n\nEntre com o numero a ser removido: ");
        scanf("%d", &num);
        if (!remove_valor(&l, num))
      printf("Numero nao encontrado");
-       break;      
+         break;      
      case 9:
       inverte(&l);
        break;            
      case 10: 
-<<<<<<< HEAD
-       exibe(&l); 
-       break;
-=======
+
         break;
->>>>>>> 0e9ef7cce9a556dd2c32d8d7726e4787d9b1bf9a
      }
 
      exibe(&l);
