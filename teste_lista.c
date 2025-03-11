@@ -73,12 +73,17 @@
      printf("Numero nao encontrado");
        break;      
      case 9:
+      inverte(&l);
        break;            
      case 10: 
+<<<<<<< HEAD
        exibe(&l); 
        break;
+=======
+        break;
+>>>>>>> 0e9ef7cce9a556dd2c32d8d7726e4787d9b1bf9a
      }
-     
+
      exibe(&l);
      printf("\n\n");    
    }    
